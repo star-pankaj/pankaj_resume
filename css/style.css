@@ -3,6 +3,9 @@ body{
     background-color: #D5D5D5;
     font-family: system-ui;
 }
+a{
+    text-decoration: none !important;
+}
 .container{
     background-color: #E9E7EA;
     width:1000px;
@@ -60,6 +63,10 @@ body{
     padding:5px 0;
     transform: translate(-40px);
     background-color: #E9E7EA;
+}
+.name .contact li a{
+    color: #000;
+   
 }
 .info ul{
     padding: 0;
@@ -138,4 +145,49 @@ list-style: none;
     text-decoration: none;
     color: #000;
     font-weight: 500;
+}
+@media (max-width:767px) {
+    .container{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 30px 15px !important;
+    }
+    .avatar{
+        justify-content: center;
+        width: 100%;
+    }
+    .info {
+        border-left: 1px solid #000;
+        padding-left: 15px;
+    }
+    .experience li {
+        padding: 5px 0;
+        width: 33.33%;
+    }
+    .skills {
+        margin-top: 40px;
+        margin-bottom: 10px;
+    }
+    .experience ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    body{
+        width: 88%;
+        padding: 10px;
+        margin: 0px;
+    }
+    li{
+        font-size: 14px;
+    }
+    .name{
+        padding-left: 28px;
+    }
+    .intro{
+        padding-left: 15px;
+    }
+    .project{
+        text-align: unset;
+    }
 }
